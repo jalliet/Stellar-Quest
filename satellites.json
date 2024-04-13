@@ -9,7 +9,8 @@
         },
         "axis_tilt": 23.4,
         "length_of_day": 24.0,
-        "length_of_year": 365.25
+        "length_of_year": 365.25,
+        "description": "Earth is the third planet from the Sun and the only known planet to support life. It has a diverse range of ecosystems, from lush forests to vast oceans, and is home to millions of species. Earth's atmosphere is composed primarily of nitrogen and oxygen, and its climate is regulated by complex interactions between the atmosphere, oceans, and land. Earth's only natural satellite is the Moon. The Moon is the fifth-largest satellite in the solar system and is thought to have formed from debris left over after a Mars-sized object collided with Earth billions of years ago. The Moon's gravitational pull causes the tides on Earth and stabilizes the planet's rotation."
     },
     "Mars": {
         "Phobos": {
@@ -28,7 +29,8 @@
         },
         "axis_tilt": 25.2,
         "length_of_day": 24.6,
-        "length_of_year": 687.0
+        "length_of_year": 687.0,
+        "description": "Mars is the fourth planet from the Sun and is known as the 'Red Planet' due to its reddish appearance. It has a thin atmosphere composed mostly of carbon dioxide and features a landscape marked by ancient volcanoes, canyons, and dry riverbeds. Mars has polar ice caps made of water ice and dry ice (frozen carbon dioxide). Mars has two small, irregularly shaped moons: Phobos and Deimos. Phobos is the larger and inner moon, orbiting Mars three times a day, while Deimos is smaller and orbits Mars every 30 hours. Both moons are thought to be asteroids captured by Mars' gravity."
     },
     "Jupiter": {
         "Io": {
@@ -61,7 +63,8 @@
         },
         "axis_tilt": 3.1,
         "length_of_day": 9.9,
-        "length_of_year": 4332.6
+        "length_of_year": 4332.6,
+        "description": "Jupiter is the largest planet in the solar system, with a mass more than twice that of all the other planets combined. It is a gas giant composed mainly of hydrogen and helium, with a thick atmosphere featuring colorful bands and the famous Great Red Spot, a massive storm that has been raging for centuries. Jupiter has 79 known moons, with the four largest being Io, Europa, Ganymede, and Callisto, known as the Galilean moons. Io is the most volcanically active body in the solar system, while Europa is thought to have a subsurface ocean beneath its icy crust. Ganymede is the largest moon in the solar system, and Callisto is heavily cratered and may also have a subsurface ocean."
     },
     "Saturn": {
         "Mimas": {
@@ -115,7 +118,8 @@
         },
         "axis_tilt": 26.7,
         "length_of_day": 10.7,
-        "length_of_year": 10759.2
+        "length_of_year": 10759.2,
+        "description": "Saturn is the sixth planet from the Sun and is known for its stunning ring system. Like Jupiter, it is a gas giant composed mainly of hydrogen and helium. Saturn's atmosphere features strong winds and a hexagonal-shaped jet stream at its north pole. Saturn has 82 confirmed moons, with the largest being Titan. Titan is the only moon in the solar system with a substantial atmosphere and is larger than the planet Mercury. Other notable moons include Enceladus, which has geysers that eject water vapor and ice particles from its south pole, and Iapetus, which has a striking two-toned appearance."
     },
     "Uranus": {
         "Miranda": {
@@ -155,7 +159,8 @@
         },
         "axis_tilt": 97.8,
         "length_of_day": 17.2,
-        "length_of_year": 30688.5
+        "length_of_year": 30688.5,
+        "description": "Uranus is the seventh planet from the Sun and is an ice giant composed mainly of water, methane, and ammonia ice. It has a unique tilt, with its rotational axis lying nearly on its side, causing unusual seasonal changes. Uranus has 27 known moons, with the five largest being Miranda, Ariel, Umbriel, Titania, and Oberon. These moons are composed of a mixture of ice and rock and show signs of past geological activity, such as faulting and cryovolcanism."
     },
     "Neptune": {
         "Triton": {
@@ -174,6 +179,7 @@
         },
         "axis_tilt": 28.3,
         "length_of_day": 16.1,
-        "length_of_year": 60195.0
+        "length_of_year": 60195.0,
+        "description": "Neptune is the eighth and farthest planet from the Sun and is another ice giant similar in composition to Uranus. It has the strongest winds of any planet in the solar system, with wind speeds reaching up to 2,100 km/h (1,300 mph). Neptune has 14 known moons, with the largest being Triton. Triton is unique among large moons in the solar system, as it orbits Neptune in the opposite direction of the planet's rotation (retrograde orbit). This suggests that Triton may have been captured by Neptune's gravity rather than forming in place. Neptune's second-largest moon, Nereid, has a highly eccentric orbit and may be a captured asteroid."
     }
 }
