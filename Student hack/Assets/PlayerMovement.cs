@@ -10,14 +10,12 @@ public class script : MonoBehaviour
     private Rigidbody rb;
     private bool isGrounded;
     private Transform transform;
-    private GameObject ground;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         // rb.drag = 3;
         transform = GetComponent<Transform>();
-        ground = GameObject.Find("Ground");
     }
 
     void Update()
