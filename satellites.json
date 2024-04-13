@@ -6,7 +6,10 @@
             "L": 0,
             "long_peri": 0,
             "long_node": 0
-        }
+        },
+        "axis_tilt": 23.4,
+        "length_of_day": 24.0,
+        "length_of_year": 365.25
     },
     "Mars": {
         "Phobos": {
@@ -22,7 +25,10 @@
             "L": 0,
             "long_peri": 0,
             "long_node": 0
-        }
+        },
+        "axis_tilt": 25.2,
+        "length_of_day": 24.6,
+        "length_of_year": 687.0
     },
     "Jupiter": {
         "Io": {
@@ -52,7 +58,10 @@
             "L": 176.0,
             "long_peri": 52.0,
             "long_node": 298.0
-        }
+        },
+        "axis_tilt": 3.1,
+        "length_of_day": 9.9,
+        "length_of_year": 4332.6
     },
     "Saturn": {
         "Mimas": {
@@ -103,7 +112,10 @@
             "L": 0,
             "long_peri": 0,
             "long_node": 0
-        }
+        },
+        "axis_tilt": 26.7,
+        "length_of_day": 10.7,
+        "length_of_year": 10759.2
     },
     "Uranus": {
         "Miranda": {
@@ -140,7 +152,10 @@
             "L": 0,
             "long_peri": 0,
             "long_node": 0
-        }
+        },
+        "axis_tilt": 97.8,
+        "length_of_day": 17.2,
+        "length_of_year": 30688.5
     },
     "Neptune": {
         "Triton": {
@@ -156,6 +171,9 @@
             "L": 0,
             "long_peri": 0,
             "long_node": 0
-        }
+        },
+        "axis_tilt": 28.3,
+        "length_of_day": 16.1,
+        "length_of_year": 60195.0
     }
 }
