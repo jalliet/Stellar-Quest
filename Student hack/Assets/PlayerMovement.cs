@@ -6,7 +6,7 @@ public class script : MonoBehaviour
 {
     public float speed = 0.1f;
     public float maxSpeed = 5f; // Add this line at the top of your class
-    public float jumpForce = 1f;
+    public float jumpForce = 5f;
     private Rigidbody rb;
     private bool isGrounded;
     private Transform transform;
@@ -49,8 +49,16 @@ public class script : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground")) // Check if the collision object has the "Ground" tag
         {
-            isGrounded = true;
-            Debug.Log("grounded");
+            foreach (ContactPoint contact in collision.contacts)
+            {
+                // Check if the collision is from above
+                if (contact.normal == Vector3.up)
+                {
+                    isGrounded = true;
+                    Debug.Log("grounded");
+                    break;
+                }
+            }
         }
     }
 }
