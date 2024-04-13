@@ -1,0 +1,161 @@
+{
+    "Earth": {
+        "Moon": {
+            "a": 384400,
+            "i": 5.145,
+            "L": 0,
+            "long_peri": 0,
+            "long_node": 0
+        }
+    },
+    "Mars": {
+        "Phobos": {
+            "a": 9376,
+            "i": 1.075,
+            "L": 0,
+            "long_peri": 0,
+            "long_node": 0
+        },
+        "Deimos": {
+            "a": 23463,
+            "i": 1.788,
+            "L": 0,
+            "long_peri": 0,
+            "long_node": 0
+        }
+    },
+    "Jupiter": {
+        "Io": {
+            "a": 421800,
+            "i": 0.04,
+            "L": 261.0,
+            "long_peri": 268.0,
+            "long_node": 43.0
+        },
+        "Europa": {
+            "a": 671100,
+            "i": 0.47,
+            "L": 171.0,
+            "long_peri": 55.0,
+            "long_node": 219.0
+        },
+        "Ganymede": {
+            "a": 1070400,
+            "i": 0.177,
+            "L": 318.0,
+            "long_peri": 192.0,
+            "long_node": 63.0
+        },
+        "Callisto": {
+            "a": 1882700,
+            "i": 0.192,
+            "L": 176.0,
+            "long_peri": 52.0,
+            "long_node": 298.0
+        }
+    },
+    "Saturn": {
+        "Mimas": {
+            "a": 185539,
+            "i": 1.574,
+            "L": 0,
+            "long_peri": 0,
+            "long_node": 0
+        },
+        "Enceladus": {
+            "a": 237948,
+            "i": 0.009,
+            "L": 0,
+            "long_peri": 0,
+            "long_node": 0
+        },
+        "Tethys": {
+            "a": 294619,
+            "i": 1.091,
+            "L": 0,
+            "long_peri": 0,
+            "long_node": 0
+        },
+        "Dione": {
+            "a": 377396,
+            "i": 0.028,
+            "L": 0,
+            "long_peri": 0,
+            "long_node": 0
+        },
+        "Rhea": {
+            "a": 527108,
+            "i": 0.345,
+            "L": 0,
+            "long_peri": 0,
+            "long_node": 0
+        },
+        "Titan": {
+            "a": 1221870,
+            "i": 0.34854,
+            "L": 0,
+            "long_peri": 0,
+            "long_node": 0
+        },
+        "Iapetus": {
+            "a": 3560820,
+            "i": 15.47,
+            "L": 0,
+            "long_peri": 0,
+            "long_node": 0
+        }
+    },
+    "Uranus": {
+        "Miranda": {
+            "a": 129390,
+            "i": 4.232,
+            "L": 0,
+            "long_peri": 0,
+            "long_node": 0
+        },
+        "Ariel": {
+            "a": 190900,
+            "i": 0.26,
+            "L": 0,
+            "long_peri": 0,
+            "long_node": 0
+        },
+        "Umbriel": {
+            "a": 266000,
+            "i": 0.128,
+            "L": 0,
+            "long_peri": 0,
+            "long_node": 0
+        },
+        "Titania": {
+            "a": 436300,
+            "i": 0.34,
+            "L": 0,
+            "long_peri": 0,
+            "long_node": 0
+        },
+        "Oberon": {
+            "a": 583500,
+            "i": 0.058,
+            "L": 0,
+            "long_peri": 0,
+            "long_node": 0
+        }
+    },
+    "Neptune": {
+        "Triton": {
+            "a": 354759,
+            "i": 156.885,
+            "L": 0,
+            "long_peri": 0,
+            "long_node": 0
+        },
+        "Nereid": {
+            "a": 5513400,
+            "i": 32.55,
+            "L": 0,
+            "long_peri": 0,
+            "long_node": 0
+        }
+    }
+}
