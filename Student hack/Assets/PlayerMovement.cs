@@ -11,6 +11,7 @@ public class script : MonoBehaviour
     private bool isGrounded;
     private Transform transform;
     private GameObject ground;
+    private Vector3 startPosition;
 
     void Start()
     {
@@ -18,11 +19,16 @@ public class script : MonoBehaviour
         // rb.drag = 3;
         transform = GetComponent<Transform>();
         ground = GameObject.Find("Ground");
+        startPosition = transform.position;
     }
 
     void Update()
     {
-
+        if (transform.position.y < -2)
+        {
+            rb.position = startPosition;
+            rb.velocity = Vector3.zero;
+        }
 
         if (rb.velocity.magnitude > maxSpeed)
         {
@@ -39,7 +45,7 @@ public class script : MonoBehaviour
         
         
     }
-    void LateUpdate(){
+    void FixedUpdate(){
         Debug.Log("move across");
         float userInput = Input.GetAxisRaw("Horizontal") * Time.deltaTime * 100;
         rb.AddForce(new Vector3(userInput * speed, 0f, 0f), ForceMode.Force);
