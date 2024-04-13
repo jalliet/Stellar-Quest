@@ -9,11 +9,15 @@ public class script : MonoBehaviour
     public float jumpForce = 1f;
     private Rigidbody rb;
     private bool isGrounded;
+    private Transform transform;
+    private GameObject ground;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         // rb.drag = 3;
+        transform = GetComponent<Transform>();
+        ground = GameObject.Find("Ground");
     }
 
     void Update()
@@ -31,11 +35,13 @@ public class script : MonoBehaviour
             isGrounded = false;
             Debug.Log("jump");
         }
+
+        
         
     }
     void LateUpdate(){
         Debug.Log("move across");
-        float userInput = Input.GetAxisRaw("Horizontal");
+        float userInput = Input.GetAxisRaw("Horizontal") * Time.deltaTime * 100;
         rb.AddForce(new Vector3(userInput * speed, 0f, 0f), ForceMode.Force);
     }
 
