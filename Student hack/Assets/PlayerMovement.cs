@@ -4,18 +4,22 @@ using UnityEngine;
 
 public class script : MonoBehaviour
 {
-    public float speed = 0.1f;
+    public float speed = 1f;
     public float maxSpeed = 5f; // Add this line at the top of your class
     public float damping = 0.2f; 
     public float jumpForce = 0.01f;
     private Rigidbody rb;
     private Vector3 startPosition;
 
+    private Animator playerAnimator;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         // rb.drag = 3;
         startPosition = transform.position;
+
+        playerAnimator = GetComponent<Animator>();
     }
 
     void Update()
@@ -48,6 +52,8 @@ public class script : MonoBehaviour
             rb.velocity += new Vector3((-1*rb.velocity.x*damping), 0f, 0f);
         }
         rb.AddForce(Physics.gravity, ForceMode.Acceleration);
+
+        playerAnimator.SetFloat("Velocity", rb.velocity.x*100);
     } 
 
     //void OnCollisionEnter(Collision collision)
