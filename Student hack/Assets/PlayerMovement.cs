@@ -6,65 +6,60 @@ public class script : MonoBehaviour
 {
     public float speed = 0.1f;
     public float maxSpeed = 5f; // Add this line at the top of your class
-    public float jumpForce = 5f;
+    public float damping = 0.2f; 
+    public float jumpForce = 0.01f;
     private Rigidbody rb;
-    private bool isGrounded;
-    private Transform transform;
-    private GameObject ground;
     private Vector3 startPosition;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         // rb.drag = 3;
-        transform = GetComponent<Transform>();
-        ground = GameObject.Find("Ground");
         startPosition = transform.position;
     }
 
     void Update()
     {
-        if (transform.position.y < -2)
-        {
+    }
+    void FixedUpdate(){
+        if (transform.position.y < -2){
             rb.position = startPosition;
             rb.velocity = Vector3.zero;
         }
 
-        if (rb.velocity.magnitude > maxSpeed)
+        if (Mathf.Abs(rb.velocity.x) > maxSpeed)
         {
-            rb.velocity = rb.velocity.normalized * maxSpeed;
+            rb.velocity = new Vector3(maxSpeed, rb.velocity.y, rb.velocity.z);
         }
         
-        if (isGrounded && Input.GetKeyDown(KeyCode.Space))
-        {
-            rb.AddForce(new Vector3(0f, jumpForce, 0f), ForceMode.Impulse);
-            isGrounded = false;
-            Debug.Log("jump");
+        if(rb.velocity.y == 0 && Input.GetKey(KeyCode.Space)){
+            Debug.Log("Adding force");
+            rb.AddForce(0f, jumpForce, 0f,ForceMode.Impulse);
         }
+        
 
-        
-        
-    }
-    void FixedUpdate(){
-        Debug.Log("move across");
-        float userInput = Input.GetAxisRaw("Horizontal") * Time.deltaTime * 100;
+        float userInput = Input.GetAxisRaw("Horizontal") * Time.fixedDeltaTime * 100;
         rb.AddForce(new Vector3(userInput * speed, 0f, 0f), ForceMode.Force);
-    }
 
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Ground")) // Check if the collision object has the "Ground" tag
-        {
-            foreach (ContactPoint contact in collision.contacts)
-            {
-                // Check if the collision is from above
-                if (contact.normal == Vector3.up)
-                {
-                    isGrounded = true;
-                    Debug.Log("grounded");
-                    break;
-                }
-            }
+        if(rb.velocity.y == 0 && userInput == 0 && rb.velocity.x != 0){
+            rb.velocity += new Vector3((-1*rb.velocity.x*damping), 0f, 0f);
         }
-    }
+    } 
+
+    //void OnCollisionEnter(Collision collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Ground")) // Check if the collision object has the "Ground" tag
+    //    {
+    //        foreach (ContactPoint contact in collision.contacts)
+    //        {
+    //            // Check if the collision is from above
+    //            if (contact.normal == Vector3.up)
+    //            {
+    //                isGrounded = true;
+    //                Debug.Log("grounded");
+    //                break;
+    //            }
+    //        }
+    //    }
+    //}
 }
