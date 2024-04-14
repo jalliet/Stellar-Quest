@@ -22,7 +22,7 @@ public class script : MonoBehaviour
     {
     }
     void FixedUpdate(){
-        if (transform.position.y < -2){
+        if (transform.position.y < -4){
             rb.position = startPosition;
             rb.velocity = Vector3.zero;
         }
@@ -32,7 +32,11 @@ public class script : MonoBehaviour
             rb.velocity = new Vector3(maxSpeed, rb.velocity.y, rb.velocity.z);
         }
         
-        if(rb.velocity.y == 0 && Input.GetKey(KeyCode.Space)){
+        Debug.Log("Checking jump conditions");
+        Debug.Log(rb.velocity.y);
+        Debug.Log(Input.GetKey(KeyCode.Space));
+        if(rb.velocity.y < 0.005f && rb.velocity.y > -0.005f && Input.GetKey(KeyCode.Space)){
+            Debug.Log("Jumped");
             rb.AddForce(0f, jumpForce, 0f,ForceMode.Impulse);
         }
         
