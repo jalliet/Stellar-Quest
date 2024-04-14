@@ -33,7 +33,6 @@ public class script : MonoBehaviour
         }
         
         if(rb.velocity.y == 0 && Input.GetKey(KeyCode.Space)){
-            Debug.Log("Adding force");
             rb.AddForce(0f, jumpForce, 0f,ForceMode.Impulse);
         }
         
@@ -41,9 +40,10 @@ public class script : MonoBehaviour
         float userInput = Input.GetAxisRaw("Horizontal") * Time.fixedDeltaTime * 100;
         rb.AddForce(new Vector3(userInput * speed, 0f, 0f), ForceMode.Force);
 
-        if(rb.velocity.y == 0 && userInput == 0 && rb.velocity.x != 0){
+        if(userInput == 0 && rb.velocity.x != 0){
             rb.velocity += new Vector3((-1*rb.velocity.x*damping), 0f, 0f);
         }
+        rb.AddForce(Physics.gravity, ForceMode.Acceleration);
     } 
 
     //void OnCollisionEnter(Collision collision)
