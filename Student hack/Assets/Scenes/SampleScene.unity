@@ -830,13 +830,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 413716223}
+  - component: {fileID: 413716224}
+  - component: {fileID: 413716225}
   m_Layer: 0
   m_Name: Neptune
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &413716223
 Transform:
   m_ObjectHideFlags: 0
@@ -853,6 +855,43 @@ Transform:
   - {fileID: 586055469}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &413716224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413716222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ca2bef8e8f715d4ba8f0c1ac4d65faf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  semiMajorAxis0: 30.06952752
+  semiMajorAxisDelta: 0.00006447
+  eccentricity0: 0
+  eccentricityDelta: 0
+  inclination0Store: 1.770055
+  inclinationDeltaStore: 0.000224
+  meanLongitude0: 304.22289287
+  meanLongitudeDelta: 218.46515314
+  longOfPerihelion0: 46.681587
+  longOfPerihelionDelta: 0.01009938
+  longOfAscendingNode0: 131.7864
+  longOfAscendingNodeDelta: -0.00606302
+--- !u!114 &413716225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413716222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 646c2ecd06cc81243a6686a9905480a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &437142794
 GameObject:
   m_ObjectHideFlags: 0
@@ -947,8 +986,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5320860ba3e72d4a80332b10b18e975, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToSpin: 1
-  rotationAxis: {x: 0, y: 0, z: 0}
 --- !u!114 &437142801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1033,8 +1070,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5320860ba3e72d4a80332b10b18e975, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToSpin: 58.6666666667
-  rotationAxis: {x: 0, y: 0, z: 0}
 --- !u!114 &503105812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1701,8 +1736,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5320860ba3e72d4a80332b10b18e975, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToSpin: 0.4667
-  rotationAxis: {x: 0, y: 0, z: 0}
 --- !u!114 &950912923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2130,13 +2163,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1232000473}
+  - component: {fileID: 1232000474}
+  - component: {fileID: 1232000475}
   m_Layer: 0
   m_Name: Saturn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1232000473
 Transform:
   m_ObjectHideFlags: 0
@@ -2147,12 +2182,49 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -17.30088, y: -6.2930937, z: 14.541526}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 506878489}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1232000474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232000472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ca2bef8e8f715d4ba8f0c1ac4d65faf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  semiMajorAxis0: 9.54149883
+  semiMajorAxisDelta: -0.00003065
+  eccentricity0: 0
+  eccentricityDelta: 0
+  inclination0Store: 2.494241
+  inclinationDeltaStore: 0.00451969
+  meanLongitude0: 50.07571329
+  meanLongitudeDelta: 1222.11494724
+  longOfPerihelion0: 92.86136
+  longOfPerihelionDelta: 0.5417948
+  longOfAscendingNode0: 113.64
+  longOfAscendingNodeDelta: -0.25015002
+--- !u!114 &1232000475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232000472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 646c2ecd06cc81243a6686a9905480a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1252860727 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4538169596089768, guid: ec1861462fc1b46f1a1c1c3c0f1f7f15, type: 3}
@@ -2350,7 +2422,7 @@ Transform:
   m_GameObject: {fileID: 1641194946}
   serializedVersion: 2
   m_LocalRotation: {x: -0.010452844, y: 0.988899, z: 0.08525567, w: 0.1212479}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalPosition: {x: 0, y: 0, z: 15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2366,13 +2438,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1696899192}
+  - component: {fileID: 1696899193}
+  - component: {fileID: 1696899194}
   m_Layer: 0
   m_Name: Uranus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1696899192
 Transform:
   m_ObjectHideFlags: 0
@@ -2383,12 +2457,49 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -17.30088, y: -6.2930937, z: 14.541526}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1920369032}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1696899193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696899191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ca2bef8e8f715d4ba8f0c1ac4d65faf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  semiMajorAxis0: 19.18797948
+  semiMajorAxisDelta: -0.00020455
+  eccentricity0: 0
+  eccentricityDelta: 0
+  inclination0Store: 0.7729813
+  inclinationDeltaStore: -0.00180155
+  meanLongitude0: 314.20276625
+  meanLongitudeDelta: 428.49512595
+  longOfPerihelion0: 172.4341
+  longOfPerihelionDelta: 0.09266985
+  longOfAscendingNode0: 73.9625
+  longOfAscendingNodeDelta: 0.05739699
+--- !u!114 &1696899194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696899191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 646c2ecd06cc81243a6686a9905480a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1702534916
 GameObject:
   m_ObjectHideFlags: 3
@@ -2595,8 +2706,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5320860ba3e72d4a80332b10b18e975, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToSpin: 1.04166666667
-  rotationAxis: {x: 0, y: 0, z: 0}
 --- !u!114 &1731916918
 MonoBehaviour:
   m_ObjectHideFlags: 0
