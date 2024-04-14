@@ -1,4 +1,16 @@
 {
+    "Mercury": {
+        "axis_tilt": 0.034,
+        "length_of_day": 4222.6,
+        "length_of_year": 88.0,
+        "description": "Mercury is the smallest planet in the solar system and the closest to the Sun. Its surface is heavily cratered and resembles Earth's Moon, with a thin exosphere instead of a substantial atmosphere. Mercury experiences extreme temperature variations, ranging from -180\u00b0C to 430\u00b0C, due to its proximity to the Sun and lack of a significant atmosphere.\n\nMercury has no natural satellites, and its orbital period is only 88 Earth days, making it the fastest planet to orbit the Sun. Due to its close proximity to the Sun, Mercury is difficult to observe from Earth and was once thought to be two separate objects \u2013 one visible in the morning and another in the evening."
+    },
+    "Venus": {
+        "axis_tilt": 177.4,
+        "length_of_day": 2802.0,
+        "length_of_year": 224.7,
+        "description": "Venus is the second planet from the Sun and is often called Earth's 'sister planet' due to their similar size and mass. However, Venus has a thick atmosphere composed mainly of carbon dioxide, which creates a powerful greenhouse effect, resulting in surface temperatures of up to 460\u00b0C. Venus is the hottest planet in the solar system, even though Mercury is closer to the Sun.\n\nVenus rotates in the opposite direction to most other planets (retrograde rotation), and its atmospheric pressure at the surface is 90 times that of Earth. Venus has no natural satellites, and its surface features include vast plains, high plateaus, and volcanoes. The planet is perpetually shrouded in thick clouds of sulfuric acid, which make it appear bright white when viewed from Earth."
+    },
     "Earth": {
         "Moon": {
             "a": 384400,
